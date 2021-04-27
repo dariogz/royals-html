@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Tycoon Club</title>
-    <link rel="stylesheet" href="./assets/theme.css">
-    <link rel="stylesheet" href="./assets/theme.js">
+    <link rel="stylesheet" href="../assets/theme.css">
+    <script defer type="module" src="../assets/theme.js"></script>
+    <link rel="stylesheet" href="../assets/theme.js">
 </head>
 <body class="site">
 
@@ -15,26 +16,29 @@
     <header class="site-header">
         <div class="site-header__overnav"></div>
         <nav class="site-nav">
-            <ul class="site-nav__main-menu">
-                <li class="site-nav__main-menu-item">
-                    <a href="#" class="site-nav__main-menu-button site-nav__main-menu-button--active">Home</a>
-                </li>
-                <li class="site-nav__main-menu-item">
-                    <a href="#" class="site-nav__main-menu-button">Our Resorts</a>
-                </li>
-                <li class="site-nav__main-menu-item">
-                    <a href="#" class="site-nav__main-menu-button">Membership</a>
-                </li>
-                <li class="site-nav__main-menu-item">
-                    <a href="#" class="site-nav__main-menu-button">Contact</a>
-                </li>
-                <li class="site-nav__main-menu-item">
-                    <a href="#" class="site-nav__main-menu-button">Login</a>
-                </li>
-                <li class="site-nav__main-menu-item">
-                    <a href="#" class="site-nav__main-menu-button">Become a member</a>
-                </li>
-            </ul>
+            <div class="site-nav__main-menu-container">
+                <button class="site-nav__main-menu-hamburger button-hamburger"></button>
+                <ul class="site-nav__main-menu">
+                    <li class="site-nav__main-menu-item">
+                        <a href="#" class="site-nav__main-menu-button site-nav__main-menu-button--active">Home</a>
+                    </li>
+                    <li class="site-nav__main-menu-item">
+                        <a href="#" class="site-nav__main-menu-button">Our Resorts</a>
+                    </li>
+                    <li class="site-nav__main-menu-item">
+                        <a href="#" class="site-nav__main-menu-button">Membership</a>
+                    </li>
+                    <li class="site-nav__main-menu-item">
+                        <a href="#" class="site-nav__main-menu-button">Contact</a>
+                    </li>
+                    <li class="site-nav__main-menu-item">
+                        <a href="#" class="site-nav__main-menu-button">Login</a>
+                    </li>
+                    <li class="site-nav__main-menu-item">
+                        <a href="#" class="site-nav__main-menu-button">Become a member</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -44,7 +48,7 @@
         <div class="section-main-title">
             <h2 class="section-main-title__title">Welcome to Royal Tycoons Club</h2>
         </div>
-        <img class="component-hero__image" src="./assets/photo.jpg" />
+        <img class="component-hero__image" src="../assets/photo.jpg" />
 
         <div class="component-hero__content wrapper">
             <h1 class="component-hero__content-title">To Travel is to Live</h1>
@@ -64,8 +68,13 @@
             <div class="component-section-title__title-right"></div>
         </div>
         <div class="section-product-card__product">
-            <img class="section-product-card__product-front" src="./assets/card-front.png" />
-            <img class="section-product-card__product-back" src="./assets/card-back.png" />
+            <div class="section-product-card__product-card card--front">
+                <img class="section-product-card__product-card-img" src="../assets/card-front.png" />
+
+            </div>
+            <div class="section-product-card__product-card card--back">
+                <img class="section-product-card__product-card-img" src="../assets/card-back.png" />
+            </div>
         </div>
         <a class="section-product-card__button btn btn--rounded" href="#">Learn More</a>
     </section>
@@ -91,7 +100,7 @@
     <section class="site-section section-text-content">
         <div class="component-section-title component-section-title--top">
             <div class="component-section-title__title-left"></div>
-            <h3 class="component-section-title__title">Explore the World <br>With Us</h3>
+            <h3 class="component-section-title__title">Explore the World <br class="visible">With Us</h3>
             <div class="component-section-title__title-right"></div>
         </div>
         <div class="section-text-content__content wrapper text-paragraph">
@@ -107,28 +116,29 @@
     <section class="site-section section-benefits">
         <div class="component-section-title component-section-title--top">
             <div class="component-section-title__title-left"></div>
-            <h3 class="component-section-title__title">Benefits of Associating <br>With Us</h3>
+            <h3 class="component-section-title__title">Benefits Of <br class="tablet-down">Associating With Us</h3>
             <div class="component-section-title__title-right"></div>
         </div>
-        <ul class="section-benefits__list wrapper wrapper--fluid text-paragraph">
+        <ul class="section-benefits__list wrapper wrapper--xl text-paragraph">
             <li class="section-benefits__list-item">
-                <img class="section-benefits__list-image" src="./assets/benefits-item.png">
+                <img class="section-benefits__list-image" src="../assets/benefits-item.png">
                 <h5 class="section-benefits__list-text">Zero Maintenance charges</h5>
             </li>
             <li class="section-benefits__list-item">
-                <img class="section-benefits__list-image" src="./assets/benefits-item.png">
+                <img class="section-benefits__list-image" src="../assets/benefits-item.png">
                 <h5 class="section-benefits__list-text">You save up to 50% <br>on a single <br>vacation</h5>
             </li>
             <li class="section-benefits__list-item">
-                <img class="section-benefits__list-image" src="./assets/benefits-item.png">
+                <img class="section-benefits__list-image" src="../assets/benefits-item.png">
                 <h5 class="section-benefits__list-text">Our commitment <br>to provide you the <br>best luxury</h5>
             </li>
+            <li class="section-benefits__list-wrap"></li>
             <li class="section-benefits__list-item">
-                <img class="section-benefits__list-image" src="./assets/benefits-item.png">
+                <img class="section-benefits__list-image" src="../assets/benefits-item.png">
                 <h5 class="section-benefits__list-text">Unlimited <br>Vacations at your <br>convenience</h5>
             </li>
             <li class="section-benefits__list-item">
-                <img class="section-benefits__list-image" src="./assets/benefits-item.png">
+                <img class="section-benefits__list-image" src="../assets/benefits-item.png">
                 <h5 class="section-benefits__list-text">Pay less, travel <br>more</h5>
             </li>
         </ul>
@@ -146,50 +156,50 @@
         <ul class="section-destinations__list wrapper wrapper--xl text-paragraph">
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
 
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
             <li class="section-destinations__item">
                 <a href="#" class="section-destinations__item-button">
-                    <img class="section-destinations__item-image" src="./assets/destination.png">
+                    <img class="section-destinations__item-image" src="../assets/destination.png">
                     <span class="section-destinations__item-title">Seychelles</span>
                 </a>
             </li>
@@ -245,7 +255,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </footer>
 
 
 
